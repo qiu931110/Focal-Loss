@@ -6,7 +6,8 @@ You can see "Focal Loss for Dense Object Detection" [arXiv](https://arxiv.org/ab
 
 ```
 // Focal Loss layer
-optional FocalLossParameter focal_loss_param = 124;
+optional FocalLossParameter focal_loss_param = 145;//需要和自己的protobuf序列号对应，不能产生冲突
+//否则会报错：Field number 124 has already been used in “caffe.LayerParameter” by field "focal_loss_param"
 
 // Focal Loss for Dense Object Detection
 message FocalLossParameter {
